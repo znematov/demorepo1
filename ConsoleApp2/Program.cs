@@ -12,6 +12,6 @@ class DemoClass
 
     public string DemoMethod()
     {
-        return "Demo";
+        return "Demo1";
     }
 }
