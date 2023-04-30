@@ -1,17 +1,22 @@
-﻿DemoClass demo = new();
-demo.DemoMethod();
+﻿using ConsoleApp2;
 
-Console.WriteLine("Hello, World!");
-
-
-class DemoClass
+Cat cat = new("assyrian")
 {
-    private string? _testField;
-
-    public string Type { get; set; } = string.Empty;
-
-    public string DemoMethod()
-    {
-        return "Demo1";
-    }
-}
+    Color = "red"
+};
+cat.MakeSound();
+DomesticCat domesticCat = new("assyrian")
+{
+    Color = "yellow"
+};
+domesticCat.MakeSound();
+StreetCat streetCat = new("unknown")
+{
+    Color = "black"
+};
+streetCat.MakeSound();
+Dog dog = new()
+{
+    Color = "brown"
+};
+dog.MakeSound();
